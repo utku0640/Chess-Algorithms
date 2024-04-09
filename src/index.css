@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+.board {
+  width: 640px;
+  height: 640px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.white_square {
+  background-color: #ebecd0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.black_square {
+  background-color: #739552;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.board_left {
+  display: flex;
+  flex-direction: row;
+}
+.board_bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.board_left_border {
+  width: 20px;
+  height: 640px;
+  background-color: #739552;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.board_bottom_border {
+  width: 640px;
+  height: 20px;
+  background-color: #ebecd0;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.modal_container {
+  height: 660px;
+  width: 660px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.modal {
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 35px;
+  background: rgba(0, 0, 0, 1);
+}
+
+.modal > h1 {
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+.modal > h2 {
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.button {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 10px;
+}
+
+.selecting_page_container {
+  height: 640px;
+  width: 640px;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+}
+.selecting_page {
+  position: absolute;
+  width: 80px;
+  height: 350px;
+}
+
+.selecting_page_white_side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.selecting_page_black_side {
+  /* display: none; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
